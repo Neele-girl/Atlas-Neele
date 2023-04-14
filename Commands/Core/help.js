@@ -59,21 +59,21 @@ const now = new Date();
        let greeting;
 
         if (hour >= 0 && hour < 12) {
-          greeting = "Ohayou gozaimasu"; //good morning
+          greeting = "Guten Morgen"; //good morning
         } else if (hour >= 12 && hour < 18) {
-          greeting = "Konnichiwa"; //good afternoon
+          greeting = "Guten Tag"; //good afternoon
         } else {
-          greeting = "Konbanwa"; //good evening
+          greeting = "Guten Abend"; //good evening
         }
-      let textHelpMenu = `${greeting} *${pushName}* Senpai,
+      let textHelpMenu = `${greeting} *${pushName}* Willkommen bei NeeleBot,
 
-I am *${botName}*, a bot developed by *Team Atlas*.
+Willkommen im Botmenü von *${botName}*,
 
 🎀 My prefix is: *${prefix}*
 
 🧩 Server Uptime: *${uptime()}*
 
-Here's the list of my Commands.\n
+Hier ist die Liste meiner Befehle.\n
            
 ╭──────ꕥ Core ꕥ─────╮
 ├
@@ -293,13 +293,11 @@ Here's the list of my Commands.\n
       }
 
       textHelpMenu += `*🔰  ${botName}  🔰*
- _Powered By:_ *Team ATLAS*
+ _Powered By:_ *NeeleBot*
 
-🎀 To use any of these commands type " *${prefix}Command name* ".
+🎀 Um einen dieser Befehle zu verwenden, geben Sie ein " *${prefix}Command name* ".
 
-🏮 To get Support Group link type " *${prefix}support* ".
-
-🧩 To report any issues to Developer type " *${prefix}report <describe issue>* ".\n`;
+🏮 Du brauchst Unterstützung Kein Problem Neele wird ihnen dabei helfen Link zur Neele: https://wa.me/491756445556?text=Hallo%20ich%20habe%20eine%20frage%20(Yourtext).
 
       await Miku.sendMessage(m.from, {video: { url: botVideo }, gifPlayback: true, caption: textHelpMenu,}, { quoted: m });
     }
