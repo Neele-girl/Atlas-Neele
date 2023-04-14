@@ -16,7 +16,7 @@ module.exports = {
     
     let bmffg = {
       image: {url: imgURL},
-      caption: `\n*🎀 FantoX APIs 🎀*\n\n*🧩 API link:* \nhttps://fantox-api.vercel.app\n`,
+      caption: `\n*🎀 Gespreizte Muschibild Hentai 🎀*\n\n*🧩 Für mehr gespreizte Muschibilder einfach den Command !spreadpussy eingeben,
     };
     
     await Miku.sendMessage(m.from, bmffg, { quoted: m }).catch((err) => {
